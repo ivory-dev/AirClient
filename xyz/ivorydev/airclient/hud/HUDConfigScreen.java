@@ -15,7 +15,6 @@ public class HUDConfigScreen extends GuiScreen {
 	public void initGui() {
 		super.initGui();
 		this.buttonList.add(new GuiButton(6340, this.width / 2 - 50, this.height / 2 - 10, 100, 20, "Mods"));
-		this.buttonList.add(new GuiButton(1193, this.width / 2 - 100, this.height / 2 - 20, 200, 40, "Minecraft Settings"));
 	}
 	
 	@Override
@@ -37,8 +36,6 @@ public class HUDConfigScreen extends GuiScreen {
 		switch (button.id) {
 		case 6340:
 			mc.displayGuiScreen(new ClickGUI());
-		case 1193:
-			mc.displayGuiScreen(new GuiIngameMenu());
 		}
 	}
 }
